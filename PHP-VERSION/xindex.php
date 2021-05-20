@@ -28,14 +28,14 @@ require_once __DIR__ . '/database.php';
         <section class="container flex">
 
              <?php foreach ($database as $value) {?>
-          <div class="card flex">
-           <img src= <?php echo $value['poster'] ?> alt="">
-           <h3> <?php echo $value["title"]; ?></h3>
-           <p class=" f13"> <?php echo $value["author"]; ?></p>
-           <p> <?php echo $value["year"]; ?></p>
-           <p class=" f13"> <?php echo $value["genre"]; ?></p>
+                    <div class="card flex">
+                        <img src= <?php echo $value['poster'] ?> alt="">
+                        <h3> <?php echo $value["title"]; ?></h3>
+                        <p class=" f13"> <?php echo $value["author"]; ?></p>
+                        <p> <?php echo $value["year"]; ?></p>
+                        <p class=" f13"> <?php echo $value["genre"]; ?></p>
 
-           </div>
+                    </div>
                <?php }?>
 
         </section>

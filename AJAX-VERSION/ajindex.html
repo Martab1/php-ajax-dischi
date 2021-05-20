@@ -24,13 +24,12 @@
             <section class="container flex">
     
               <div v-for="info in albumInfo" class="card flex">
-               <img :src= 'info.poster' :alt="info.author">
-               <h3> {{ info.title }} </h3>
-               <p class=" f13"> {{info.author}} </p>
-               <p> {{info.year }} </p>
-               <p class=" f13"> {{info.genre}} </p>
-    
-               </div>
+                    <img :src= 'info.poster' :alt="info.author">
+                    <h3> {{ info.title }} </h3>
+                    <p class=" f13"> {{info.author}} </p>
+                    <p> {{info.year }} </p>
+                    <p class=" f13"> {{info.genre}} </p>
+              </div>
                    
     
             </section>
