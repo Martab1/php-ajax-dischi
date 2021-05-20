@@ -1,0 +1,62 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* UTILITIES */
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.f13 {
+  font-size: 13px;
+}
+
+/* HEADER */
+
+.header {
+  background: rgb(10, 27, 49);
+  padding: 10px;
+}
+
+.logo {
+  width: 40px;
+}
+
+/* MAIN */
+
+.main {
+  height: calc(100vh - 60px);
+  background-color: rgb(48, 54, 92);
+}
+
+.card {
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  margin-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  background: rgba(12, 10, 10, 0.733);
+}
+.card p {
+  padding: 5px 0;
+}
+.main .container {
+  padding: 0 20px;
+  justify-content: space-around;
+}
