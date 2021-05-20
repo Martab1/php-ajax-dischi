@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCHI-AJAX</title>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="../PHP-VERSION/css/style.css">
+
+</head>
+<body>
+    
+    <div id="app">
+        <header class="header">
+            <section class="container">
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </section>
+    
+        </header>
+
+        <main class="main">
+            <section class="container flex">
+    
+              <div v-for="info in albumInfo" class="card flex">
+               <img :src= 'info.poster' :alt="info.author">
+               <h3> {{ info.title }} </h3>
+               <p class=" f13"> {{info.author}} </p>
+               <p> {{info.year }} </p>
+               <p class=" f13"> {{info.genre}} </p>
+    
+               </div>
+                   
+    
+            </section>
+        </main>
+
+    </div>
+
+
+
+        <!--JS -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/script.js"></script>
+    </div>
+</body>
+</html>
